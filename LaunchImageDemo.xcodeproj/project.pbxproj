@@ -14,6 +14,9 @@
 		746575CB1D1D1D7E00EC8246 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 746575C91D1D1D7E00EC8246 /* LaunchScreen.storyboard */; };
 		746575D61D1D1D7E00EC8246 /* LaunchImageDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746575D51D1D1D7E00EC8246 /* LaunchImageDemoTests.swift */; };
 		746575E11D1D1D7E00EC8246 /* LaunchImageDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746575E01D1D1D7E00EC8246 /* LaunchImageDemoUITests.swift */; };
+		746575F01D1D1F2B00EC8246 /* LaunchImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746575EF1D1D1F2B00EC8246 /* LaunchImageView.swift */; };
+		749F7DE41D2109B7000C95CE /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749F7DE31D2109B7000C95CE /* TestViewController.swift */; };
+		82165B6F97BFD0303E094E8A /* Pods_LaunchImageDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC0532F50187477F8A8A918 /* Pods_LaunchImageDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1AC0532F50187477F8A8A918 /* Pods_LaunchImageDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaunchImageDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		746575BD1D1D1D7D00EC8246 /* LaunchImageDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaunchImageDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		746575C01D1D1D7D00EC8246 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		746575C21D1D1D7D00EC8246 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,10 @@
 		746575DC1D1D1D7E00EC8246 /* LaunchImageDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaunchImageDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		746575E01D1D1D7E00EC8246 /* LaunchImageDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchImageDemoUITests.swift; sourceTree = "<group>"; };
 		746575E21D1D1D7E00EC8246 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		746575EF1D1D1F2B00EC8246 /* LaunchImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchImageView.swift; sourceTree = "<group>"; };
+		749F7DE31D2109B7000C95CE /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		946775A53445ABB4F1E4849B /* Pods-LaunchImageDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaunchImageDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LaunchImageDemo/Pods-LaunchImageDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		D3E99FDF1063B4BA6F8A9CD3 /* Pods-LaunchImageDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaunchImageDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LaunchImageDemo/Pods-LaunchImageDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82165B6F97BFD0303E094E8A /* Pods_LaunchImageDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +90,8 @@
 				746575D41D1D1D7E00EC8246 /* LaunchImageDemoTests */,
 				746575DF1D1D1D7E00EC8246 /* LaunchImageDemoUITests */,
 				746575BE1D1D1D7D00EC8246 /* Products */,
+				8169B237264FBDE84B1BA8D0 /* Pods */,
+				DD12CBC61DAB093E933BA2A3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +108,10 @@
 		746575BF1D1D1D7D00EC8246 /* LaunchImageDemo */ = {
 			isa = PBXGroup;
 			children = (
+				746575EE1D1D1DC800EC8246 /* LaunchImageView */,
 				746575C01D1D1D7D00EC8246 /* AppDelegate.swift */,
 				746575C21D1D1D7D00EC8246 /* ViewController.swift */,
+				749F7DE31D2109B7000C95CE /* TestViewController.swift */,
 				746575C41D1D1D7D00EC8246 /* Main.storyboard */,
 				746575C71D1D1D7E00EC8246 /* Assets.xcassets */,
 				746575C91D1D1D7E00EC8246 /* LaunchScreen.storyboard */,
@@ -125,6 +138,31 @@
 			path = LaunchImageDemoUITests;
 			sourceTree = "<group>";
 		};
+		746575EE1D1D1DC800EC8246 /* LaunchImageView */ = {
+			isa = PBXGroup;
+			children = (
+				746575EF1D1D1F2B00EC8246 /* LaunchImageView.swift */,
+			);
+			path = LaunchImageView;
+			sourceTree = "<group>";
+		};
+		8169B237264FBDE84B1BA8D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				946775A53445ABB4F1E4849B /* Pods-LaunchImageDemo.debug.xcconfig */,
+				D3E99FDF1063B4BA6F8A9CD3 /* Pods-LaunchImageDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DD12CBC61DAB093E933BA2A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1AC0532F50187477F8A8A918 /* Pods_LaunchImageDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +170,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 746575E51D1D1D7E00EC8246 /* Build configuration list for PBXNativeTarget "LaunchImageDemo" */;
 			buildPhases = (
+				2B7EF8235D62DB8FF42B166B /* Check Pods Manifest.lock */,
 				746575B91D1D1D7D00EC8246 /* Sources */,
 				746575BA1D1D1D7D00EC8246 /* Frameworks */,
 				746575BB1D1D1D7D00EC8246 /* Resources */,
+				A561A96AF18D4796161C1667 /* Embed Pods Frameworks */,
+				CFA77DBF53406DE8AF72590C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,13 +234,16 @@
 				TargetAttributes = {
 					746575BC1D1D1D7D00EC8246 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 					746575D01D1D1D7E00EC8246 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 746575BC1D1D1D7D00EC8246;
 					};
 					746575DB1D1D1D7E00EC8246 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 746575BC1D1D1D7D00EC8246;
 					};
 				};
@@ -251,12 +295,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2B7EF8235D62DB8FF42B166B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A561A96AF18D4796161C1667 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LaunchImageDemo/Pods-LaunchImageDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFA77DBF53406DE8AF72590C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LaunchImageDemo/Pods-LaunchImageDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		746575B91D1D1D7D00EC8246 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				746575F01D1D1F2B00EC8246 /* LaunchImageView.swift in Sources */,
 				746575C31D1D1D7D00EC8246 /* ViewController.swift in Sources */,
+				749F7DE41D2109B7000C95CE /* TestViewController.swift in Sources */,
 				746575C11D1D1D7D00EC8246 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,23 +493,29 @@
 		};
 		746575E61D1D1D7E00EC8246 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 946775A53445ABB4F1E4849B /* Pods-LaunchImageDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = LaunchImageDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yeeaoo.LaunchImageDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		746575E71D1D1D7E00EC8246 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3E99FDF1063B4BA6F8A9CD3 /* Pods-LaunchImageDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = LaunchImageDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yeeaoo.LaunchImageDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -427,6 +527,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yeeaoo.LaunchImageDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LaunchImageDemo.app/LaunchImageDemo";
 			};
 			name = Debug;
@@ -439,6 +540,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yeeaoo.LaunchImageDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LaunchImageDemo.app/LaunchImageDemo";
 			};
 			name = Release;
@@ -450,6 +552,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yeeaoo.LaunchImageDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = LaunchImageDemo;
 			};
 			name = Debug;
@@ -461,6 +564,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yeeaoo.LaunchImageDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = LaunchImageDemo;
 			};
 			name = Release;
@@ -484,6 +588,7 @@
 				746575E71D1D1D7E00EC8246 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		746575E81D1D1D7E00EC8246 /* Build configuration list for PBXNativeTarget "LaunchImageDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +597,7 @@
 				746575EA1D1D1D7E00EC8246 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		746575EB1D1D1D7E00EC8246 /* Build configuration list for PBXNativeTarget "LaunchImageDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +606,7 @@
 				746575ED1D1D1D7E00EC8246 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

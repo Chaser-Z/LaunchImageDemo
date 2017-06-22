@@ -13,7 +13,10 @@ class TestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.view.backgroundColor = UIColor.white
+        
+        let url = URL(string: "https://itunes.apple.com/cn/app/it-blog-for-ios-developers/id1067787090?mt=8")
+        UIApplication.shared.openURL(url!)
     }
 
     override func didReceiveMemoryWarning() {
